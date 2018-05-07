@@ -6,10 +6,12 @@
   "author": "Yoo-Nah <ypark2270@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build:dev": "better-npm-run build:dev"
+    "build:dev": "better-npm-run build:dev",
+    "start": "better-npm-run start"
   },
   "betterScripts": {
-    "build:dev": "webpack"
+    "build:dev": "webpack",
+    "start": "node server"
   },
   "dependencies": {
     "better-npm-run": "^0.1.0",
