@@ -7,14 +7,15 @@
   "license": "MIT",
   "scripts": {
     "build:dev": "better-npm-run build:dev",
-    "start": "better-npm-run start"
+    "start:dev": "better-npm-run start:dev"
   },
   "betterScripts": {
     "build:dev": "webpack",
-    "start": "node server"
+    "start:dev": "webpack --mode=development && node server"
   },
   "dependencies": {
     "better-npm-run": "^0.1.0",
+    "express": "^4.16.3",
     "lodash": "^4.17.10"
   },
   "devDependencies": {

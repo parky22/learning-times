@@ -1,5 +1,9 @@
 const serverBuildConfig = require('../build');
+const path = require('path');
+const express = require('express');
+const app = express();
 
-console.log('server', serverBuildConfig);
+app.use(express.static(path.join(__dirname, 'dist')));
+app.get('/', (req, res) => res.send('Hello World!'));
 
-// START HERE: build express server
+app.listen(process.env.PORT, console.log(`Listening on ${process.env.PORT}`));
