@@ -11,7 +11,7 @@
   },
   "betterScripts": {
     "build:dev": "webpack",
-    "start:dev": "webpack --mode=development && node server"
+    "start:dev": "node server"
   },
   "dependencies": {
     "better-npm-run": "^0.1.0",
@@ -21,6 +21,8 @@
   "devDependencies": {
     "morgan": "^1.9.0",
     "webpack": "^4.7.0",
+    "webpack-hot-middleware": "^2.22.2",
+    "webpack-isomorphic-dev-middleware": "^4.0.3",
     "webpack-cli": "^2.1.3"
   }
 }
