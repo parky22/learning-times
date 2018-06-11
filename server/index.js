@@ -18,12 +18,13 @@ app.use(webpackHotMiddleware(clientCompiler, { quiet: true }));
 // app.get('/', (req, res) => res.send("hello"));
 
 app.get('*', (req, res, next) => {
-  console.log("HEYo");
-  res.send("HEYY");
+  const render = res.locals.isomorphic.exports.default;
+
+  res.send(render());
 //   // res.isomorphic contains `compilation` & `exports` properties:
 //   // - `compilation` contains the webpack-isomorphic-compiler compilation result
 //   // - `exports` contains the server exports, usually one or more render functions
-//   const { render } = res.locals.isomorphic.exports;
+  // const { render } = res.locals.isomorphic.exports;
 
 //   render({ req, res })
 //   .catch((err) => setImmediate(() => next(err)));
