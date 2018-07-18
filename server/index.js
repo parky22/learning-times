@@ -15,8 +15,6 @@ app.use(morgan('dev'));
 app.use(webpackIsomorphicDevMiddleware(clientCompiler, serverCompiler));
 app.use(webpackHotMiddleware(clientCompiler, { quiet: true }));
 
-// app.get('/', (req, res) => res.send("hello"));
-
 app.get('*', (req, res, next) => {
   const render = res.locals.isomorphic.exports.default;
 
@@ -26,8 +24,8 @@ app.get('*', (req, res, next) => {
 //   // - `exports` contains the server exports, usually one or more render functions
   // const { render } = res.locals.isomorphic.exports;
 
-//   render({ req, res })
-//   .catch((err) => setImmediate(() => next(err)));
+  // render({ req, res })
+  // .catch((err) => setImmediate(() => next(err)));
 });
 
 app.listen(process.env.PORT, console.log(`Listening on ${process.env.PORT}`));
