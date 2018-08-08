@@ -1,16 +1,14 @@
 import React from 'react';
 import { hot } from 'react-hot-loader';
+import { Provider } from 'react-redux';
 
-const App = () => {
-  const onClick = () => {
-    console.log("the button works");
-  }
+import Counter from './containers/component';
 
+const App = ({ store }) => {
   return (
-    <div>
-      halooooo
-      <button onClick={onClick}>CLICK ME</button>
-    </div>
+    <Provider store={store}>
+      <Counter />
+    </Provider>
   );
 };
 
