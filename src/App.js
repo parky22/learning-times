@@ -3,11 +3,15 @@ import { hot } from 'react-hot-loader';
 import { Provider } from 'react-redux';
 
 import Counter from './containers/component';
+import RecomposeCounter from './components/RecomposeCounter';
 
 const App = ({ store }) => {
   return (
     <Provider store={store}>
-      <Counter />
+      <div>
+        <Counter />
+        <RecomposeCounter />
+      </div>
     </Provider>
   );
 };
