@@ -1,9 +1,10 @@
-const template = ({ appHtml, preloadedState }) => `
+const template = ({ appHtml, preloadedState, stylesMarkup }) => `
   <!DOCTYPE html>
   <html>
     <head>
       <meta charset="UTF-8">
       <title>Cows</title>
+      ${stylesMarkup}
     </head>
     <body>
       <div id="app">${appHtml}</div>
