@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Header = () => {
+const Header = ({ styles }) => {
   return (
-    <div>
+    <div className={styles.wrapper}>
       <div>
         MeowSpace.com
       </div>
