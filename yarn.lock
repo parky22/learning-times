@@ -1728,6 +1728,13 @@ crypto-browserify@^3.11.0:
     randombytes "^2.0.0"
     randomfill "^1.0.3"
 
+css-in-js-utils@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/css-in-js-utils/-/css-in-js-utils-3.0.0.tgz#4379185f5cc79f9eba39b4e795c317f253ffaa40"
+  integrity sha512-FSdC7hZIeSmEPANOZB/VHHeaYh+MiNvqLRP7MWVck6MQs2B5KHH3XmMU9Asb/6BdwDp+JTt1q+cGgSBCuFU1GQ==
+  dependencies:
+    hyphenate-style-name "^1.0.2"
+
 css-select@^1.1.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/css-select/-/css-select-1.2.0.tgz#2b3a110539c5355f1cd8d314623e870b121ec858"
@@ -1740,6 +1747,11 @@ css-select@^1.1.0:
 css-what@2.1:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/css-what/-/css-what-2.1.0.tgz#9467d032c38cfaefb9f2d79501253062f87fa1bd"
+
+csstype@^2.5.5:
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/csstype/-/csstype-2.6.0.tgz#6cf7b2fa7fc32aab3d746802c244d4eda71371a2"
+  integrity sha512-by8hi8BlLbowQq0qtkx54d9aN73R9oUW20HISpka5kmgsR9F7nnxgfsemuR2sdCKZh+CDNf5egW9UZMm4mgJRg==
 
 currently-unhandled@^0.4.1:
   version "0.4.1"
@@ -2251,6 +2263,11 @@ fast-levenshtein@^2.0.6:
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/fast-levenshtein/-/fast-levenshtein-2.0.6.tgz#3d8a5c66883a16a30ca8643e851f19baa7797917"
 
+fast-loops@^1.0.0, fast-loops@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/fast-loops/-/fast-loops-1.0.1.tgz#a3d33e71654a7e6e67d7c2de0fee4ea11c6f2526"
+  integrity sha512-1MA7cT6Q/o1JnhyNCcxuBqZHeIHf784ZjyjayZwwj7X7nRDkCS2qoj6vUh961yxEJP1aldrYrY7+DC/xOdv05A==
+
 fbjs@^0.8.16:
   version "0.8.16"
   resolved "https://registry.yarnpkg.com/fbjs/-/fbjs-0.8.16.tgz#5e67432f550dc41b572bf55847b8aca64e5337db"
@@ -2262,6 +2279,67 @@ fbjs@^0.8.16:
     promise "^7.1.1"
     setimmediate "^1.0.5"
     ua-parser-js "^0.7.9"
+
+fbjs@^0.8.4:
+  version "0.8.17"
+  resolved "https://registry.yarnpkg.com/fbjs/-/fbjs-0.8.17.tgz#c4d598ead6949112653d6588b01a5cdcd9f90fdd"
+  integrity sha1-xNWY6taUkRJlPWWIsBpc3Nn5D90=
+  dependencies:
+    core-js "^1.0.0"
+    isomorphic-fetch "^2.1.1"
+    loose-envify "^1.0.0"
+    object-assign "^4.1.0"
+    promise "^7.1.1"
+    setimmediate "^1.0.5"
+    ua-parser-js "^0.7.18"
+
+fela-bindings@^10.0.2:
+  version "10.0.2"
+  resolved "https://registry.yarnpkg.com/fela-bindings/-/fela-bindings-10.0.2.tgz#b7d86973f7fef44e8d82a87bfaf60b1643ecc408"
+  integrity sha512-ZZfSyqnHPhFwfPvJDRQ0cUFWz9/EMYF7zACtGd/rL+jclGmQDU2+UbvEEgAwSmvhRmZXC88HjLisfVROOaMGXg==
+  dependencies:
+    fast-loops "^1.0.0"
+    fela-dom "^10.0.2"
+    fela-tools "^10.0.2"
+    react-addons-shallow-compare "^15.6.2"
+
+fela-dom@^10.0.2:
+  version "10.0.2"
+  resolved "https://registry.yarnpkg.com/fela-dom/-/fela-dom-10.0.2.tgz#13acb828de101048a019fefa17cdcc91965e8351"
+  integrity sha512-XISp4wUUp8I2MUC+ehvFR2ol/8/wKb0Scu3qHhe6cta7ymyZpymPleUTaXKK2erNsarxhFbly9Af/HRcTzHdwQ==
+  dependencies:
+    css-in-js-utils "^3.0.0"
+    fast-loops "^1.0.1"
+    fela-utils "^10.0.2"
+
+fela-tools@^10.0.2:
+  version "10.0.2"
+  resolved "https://registry.yarnpkg.com/fela-tools/-/fela-tools-10.0.2.tgz#2ef80e349b6b8602dacd13bcef7b99a1350b9abe"
+  integrity sha512-RtpaDzrxv/qjX5ZBhLBC/GZKTHdX7AXsWGahOVAYIudXh/TYYwXq5lu1jQxpZTavJypG9hjYiVXYzniyuBr0oQ==
+  dependencies:
+    css-in-js-utils "^3.0.0"
+    fast-loops "^1.0.0"
+    fela "^10.0.2"
+    fela-utils "^10.0.2"
+
+fela-utils@^10.0.2:
+  version "10.0.2"
+  resolved "https://registry.yarnpkg.com/fela-utils/-/fela-utils-10.0.2.tgz#049c7870f31cd9149767519e4e666613aef07a28"
+  integrity sha512-VHlqvhh+Wz0aCRr5wPXITFnhRmsqvCuYwoR9AKFtfynn2SysFp7S5SW1dbbd+vjTVs2R9sUlFVlKCVDvxDsKAQ==
+  dependencies:
+    css-in-js-utils "^3.0.0"
+    fast-loops "^1.0.0"
+
+fela@^10.0.2:
+  version "10.0.2"
+  resolved "https://registry.yarnpkg.com/fela/-/fela-10.0.2.tgz#5ec82f15c597189a541dda13ed650f337e6dd491"
+  integrity sha512-4NW1/u8sWt2Ldl46G8rXicXZdlbWl7wN+bhkAwtHLnH/P2frSmv3aM6sUXGUcbIPobIiVbsPVOHU2cVHWIwWGw==
+  dependencies:
+    css-in-js-utils "^3.0.0"
+    csstype "^2.5.5"
+    fast-loops "^1.0.0"
+    fela-utils "^10.0.2"
+    isobject "^3.0.1"
 
 figures@^1.7.0:
   version "1.7.0"
@@ -2737,6 +2815,11 @@ http-errors@~1.6.2:
 https-browserify@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/https-browserify/-/https-browserify-1.0.0.tgz#ec06c10e0a34c0f2faf199f7fd7fc78fffd03c73"
+
+hyphenate-style-name@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/hyphenate-style-name/-/hyphenate-style-name-1.0.2.tgz#31160a36930adaf1fc04c6074f7eb41465d4ec4b"
+  integrity sha1-MRYKNpMK2vH8BMYHT360FGXU7Es=
 
 iconv-lite@0.4.19:
   version "0.4.19"
@@ -4183,6 +4266,14 @@ promise@^7.1.1:
   dependencies:
     asap "~2.0.3"
 
+prop-types@^15.5.8:
+  version "15.6.2"
+  resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.6.2.tgz#05d5ca77b4453e985d60fc7ff8c859094a497102"
+  integrity sha512-3pboPvLiWD7dkI3qf3KbUe6hKFKa52w+AE0VCqECtf+QHAKgOL37tTaNCnuX1nAAQ4ZhyP+kYVKf8rLmJ/feDQ==
+  dependencies:
+    loose-envify "^1.3.1"
+    object-assign "^4.1.1"
+
 prop-types@^15.6.0, prop-types@^15.6.1:
   version "15.6.1"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.6.1.tgz#36644453564255ddda391191fb3a125cbdf654ca"
@@ -4305,6 +4396,14 @@ rc@^1.1.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
+react-addons-shallow-compare@^15.6.2:
+  version "15.6.2"
+  resolved "https://registry.yarnpkg.com/react-addons-shallow-compare/-/react-addons-shallow-compare-15.6.2.tgz#198a00b91fc37623db64a28fd17b596ba362702f"
+  integrity sha1-GYoAuR/DdiPbZKKP0XtZa6NicC8=
+  dependencies:
+    fbjs "^0.8.4"
+    object-assign "^4.1.0"
+
 react-dom@^16.4.0:
   version "16.4.0"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.4.0.tgz#099f067dd5827ce36a29eaf9a6cdc7cbf6216b1e"
@@ -4313,6 +4412,15 @@ react-dom@^16.4.0:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
     prop-types "^15.6.0"
+
+react-fela@^10.0.2:
+  version "10.0.2"
+  resolved "https://registry.yarnpkg.com/react-fela/-/react-fela-10.0.2.tgz#3032428794beaf731f594a53d7d7d00319eb567e"
+  integrity sha512-aaql6q1mDBoAOQxlMR6A7yC+rjZOGyHE6nQf/XjIdKY4pgD8HALy+ybQ6jNhEDByr+5NvBzrI+XlV46c/fTIoA==
+  dependencies:
+    fela-bindings "^10.0.2"
+    fela-dom "^10.0.2"
+    prop-types "^15.5.8"
 
 react-hot-loader@^4.3.1:
   version "4.3.1"
@@ -5164,6 +5272,11 @@ type-is@~1.6.15, type-is@~1.6.16:
 typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
+
+ua-parser-js@^0.7.18:
+  version "0.7.19"
+  resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-0.7.19.tgz#94151be4c0a7fb1d001af7022fdaca4642659e4b"
+  integrity sha512-T3PVJ6uz8i0HzPxOF9SWzWAlfN/DavlpQqepn22xgve/5QecC+XMCAtmUNnY7C9StehaV6exjUCI801lOI7QlQ==
 
 ua-parser-js@^0.7.9:
   version "0.7.18"
