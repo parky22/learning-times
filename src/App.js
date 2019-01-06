@@ -1,14 +1,17 @@
 import React from 'react';
 import { hot } from 'react-hot-loader';
-import { Provider } from 'react-redux';
+import { Provider as ReduxProvider } from 'react-redux';
+import { Provider as FelaProvider } from 'react-fela';
 
-import Counter from './containers/component';
+import Home from './pages/Home';
 
-const App = ({ store }) => {
+const App = ({ felaRenderer, store }) => {
   return (
-    <Provider store={store}>
-      <Counter />
-    </Provider>
+    <ReduxProvider store={store}>
+      <FelaProvider renderer={felaRenderer}>
+        <Home />
+      </FelaProvider>
+    </ReduxProvider>
   );
 };
 
