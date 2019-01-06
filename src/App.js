@@ -4,6 +4,7 @@ import { Provider } from 'react-redux';
 
 import Counter from './containers/component';
 import RecomposeCounter from './components/RecomposeCounter';
+import HooksCounter from './components/HooksCounter';
 
 const App = ({ store }) => {
   return (
@@ -11,6 +12,7 @@ const App = ({ store }) => {
       <div>
         <Counter />
         <RecomposeCounter />
+        <HooksCounter />
       </div>
     </Provider>
   );
