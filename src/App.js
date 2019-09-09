@@ -3,13 +3,13 @@ import { hot } from 'react-hot-loader';
 import { Provider as ReduxProvider } from 'react-redux';
 import { Provider as FelaProvider } from 'react-fela';
 
-import Home from './pages/Home';
+import Routes from './routes';
 
 const App = ({ felaRenderer, store }) => {
   return (
     <ReduxProvider store={store}>
       <FelaProvider renderer={felaRenderer}>
-        <Home />
+        <Routes />
       </FelaProvider>
     </ReduxProvider>
   );

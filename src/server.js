@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOMServer from 'react-dom/server';
+import { StaticRouter } from 'react-router-dom';
 import { renderToMarkup } from 'fela-dom';
 
 import App from './App';
@@ -10,7 +11,11 @@ import createFelaRenderer from './style';
 const ServerSideRenderedApp = () => {
   const store = createStore();
   const felaRenderer = createFelaRenderer();
-  const appHtml = ReactDOMServer.renderToString(<App felaRenderer={felaRenderer} store={store} />);
+  const appHtml = ReactDOMServer.renderToString(
+    <StaticRouter location="" context={{}}>
+      <App felaRenderer={felaRenderer} store={store} />
+    </StaticRouter>
+  );
   const preloadedState = store.getState();
 
   return template({
