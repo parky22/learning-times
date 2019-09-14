@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter } from "react-router-dom";
 
 import { hotApp as App } from './App';
 import createStore from './store';
@@ -10,6 +11,8 @@ const store = createStore(hydratedState);
 const felaRenderer = createFelaRenderer();
 
 ReactDOM.hydrate(
-  <App felaRenderer={felaRenderer} store={store} />,
+  <BrowserRouter>
+    <App felaRenderer={felaRenderer} store={store} />
+  </BrowserRouter>,
   document.getElementById('app')
 );
